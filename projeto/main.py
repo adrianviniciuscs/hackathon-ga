@@ -173,7 +173,7 @@ while executando:
     x_nave = nave.rect.centerx - LARGURA_TELA // 2
 
     # Exibe a fórmula
-    texto_formula = fonte.render(f"Distância = √( ({x_planeta} - {x_nave})² + ({y_planeta} - {y_nave})² )", True, COR_TEXTO)
+    texto_formula = fonte.render(f"Distância = √( ({x_planeta} - {x_nave})² + ({y_planeta} - {y_nave * -1})² )", True, COR_TEXTO)
     retangulo_texto_formula = texto_formula.get_rect()
     retangulo_texto_formula.topleft = (10, 40)
     pygame.draw.rect(tela, PRETO, retangulo_texto_formula)
